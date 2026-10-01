@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milliy Oshxona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍲 Milliy Oshxona</h1>
+    <button id="cartBtn">🛒 Savat (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <h2>Mazali taomlar — tez yetkazib berish!</h2>
+    <p>Eng sara o'zbek milliy taomlari</p>
+  </section>
+
+  <section class="controls">
+    <input type="text" id="search" placeholder="Taom qidirish...">
+    <div id="categories"></div>
+  </section>
+
+  <main id="menu" class="menu"></main>
+
+  <aside id="cart" class="cart hidden">
+    <h2>Savat</h2>
+    <ul id="cartItems"></ul>
+    <p class="total">Jami: <b id="cartTotal">0</b> so'm</p>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Ismingiz" required>
+      <input type="tel" id="phone" placeholder="Telefon raqam" required>
+      <input type="text" id="address" placeholder="Manzil" required>
+      <button type="submit">Buyurtma berish</button>
+    </form>
+    <button id="closeCart" class="secondary">Yopish</button>
+  </aside>
+
+  <footer> Milliy Oshxonaga xush kelibsiz! | Tel: +998 87 629 32 38</footer>
+  <script src="script.js"></script>
+</body>
+</html>
